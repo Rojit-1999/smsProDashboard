@@ -1,0 +1,74 @@
+import React from 'react';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+import { Line } from 'react-chartjs-2';
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+export const options = {
+  responsive: true,
+  interaction: {
+    mode: 'index',
+    intersect: false,
+  },
+  stacked: false,
+  plugins: {
+    title: {
+      display: true,
+      
+    },
+  },
+  scales: {
+    y: {
+      type: 'linear',
+      display: true,
+      position: 'left' ,
+    },
+    y1: {
+      type: 'linear' ,
+      display: true,
+      position: 'right' ,
+      grid: {
+        drawOnChartArea: false,
+      },
+    },
+  },
+};
+
+const labels = [1,2,3,4,5,6,6,7];
+
+export const data = {
+  labels,
+  datasets: [
+    {
+      label: 'SMS History',
+      data: [60,200,500,600,500,600,700,600],
+      borderColor: '#53389E',
+      backgroundColor: 'white',
+      
+      
+    },
+    
+  ],
+};
+
+export function Linegraph() {
+  
+  return <Line options={options} className='p-[20px] border' data={data} />;
+}
