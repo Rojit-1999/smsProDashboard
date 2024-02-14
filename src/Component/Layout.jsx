@@ -3,7 +3,7 @@ import smspro from "../Assets/Image/Logo.png";
 import { MdCode } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
 import { MdHomeFilled, MdLogout } from "react-icons/md";
-import { FiPlus} from "react-icons/fi";
+import { FiPlus } from "react-icons/fi";
 import { LuUsers, LuUser } from "react-icons/lu";
 import { HiChip, HiChartPie } from "react-icons/hi";
 import { HiOutlineSpeakerWave } from "react-icons/hi2";
@@ -39,13 +39,13 @@ function Layout() {
       <div className="pb-[20px] h-[500px]  ">
         {data.map((item) => (
           <Link to={item.link}>
-          <div className="flex justify-between items-center mx-[35px] mt-[15px]">
-            <div className="flex items-center gap-4 text-[16px]">
-              <div className="text-[22px]">{item.icon1}</div>
-              <div>{item.text}</div>
+            <div className="flex justify-between items-center mx-[35px] mt-[15px]">
+              <div className="flex items-center gap-4 text-[16px]">
+                <div className="text-[22px]">{item.icon1}</div>
+                <div>{item.text}</div>
+              </div>
+              <div className="text-[20px]">{item.icon2}</div>
             </div>
-            <div className="text-[20px]">{item.icon2}</div>
-          </div>
           </Link>
         ))}
       </div>
@@ -58,31 +58,9 @@ function Layout() {
             </div>
           ))}
           <div className="border border-x-0 border-t-0 my-[12px]"></div>
-     
-          {/* <div className="flex items-center justify-between pb-[10px]">
-            <div className="flex items-center gap-4">
-              <img
-                src={Hero}
-                alt=""
-                className="w-[40px] rounded-full object-cover h-[40px]"
-              />
-              <div>
-                <p>Prince Acharya</p>
-                <div className="flex items-center text-[12px]">
-                  <p>Client</p>
-                  <span>
-                    <GoDotFill className="text-[10px]" />
-                  </span>
-                  <p> Availbale</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <MdLogout className="text-[25px] text-gray-300" />
-            </div>
-          </div> */}
-          <Profiles 
-          icon={<MdLogout className="text-[25px] text-gray-300" />}/>
+
+         
+          <Profiles icon={<MdLogout className="text-[25px] text-gray-300" />} />
           <div className=" pb-[20px] text-[12px] font-[300]">
             <p>Copyright @ - 2023 SMSPro</p>
             <p>All Rights Reserved</p>
@@ -98,13 +76,13 @@ const data = [
   {
     icon1: <MdHomeFilled />,
     text: "Dashboard",
-    link:'/dashboard'
+    link: "/dashboard",
   },
   {
     icon1: <LuUser />,
     text: "Users",
     icon2: <FiPlus />,
-    link:'/users'
+    link: "/users",
   },
 
   {

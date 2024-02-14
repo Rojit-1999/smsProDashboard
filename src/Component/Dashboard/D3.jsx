@@ -18,7 +18,7 @@ function D3() {
       percentage={90}
       width={10}
       text={90}/>
-
+      
     </div>
   );
 }
