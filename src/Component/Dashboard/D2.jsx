@@ -2,7 +2,6 @@ import React from "react";
 import { FiUsers, FiMessageSquare } from "react-icons/fi";
 import { FaUserXmark } from "react-icons/fa6";
 import { FaArrowUp } from "react-icons/fa";
-import Img from "../../Assets/Image/girl.jpeg";
 import { HiMiniSpeakerWave } from "react-icons/hi2";
 
 export default function D2() {

@@ -1,6 +1,4 @@
-import { Circle, Line } from "rc-progress";
 import React from "react";
-import { FaCircle } from "react-icons/fa";
 import Progress from "../Reausable_comp/Progress";
 
 function D3() {

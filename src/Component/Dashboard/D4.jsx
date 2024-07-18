@@ -1,5 +1,4 @@
 import React from "react";
-import { FaArrowDown } from "react-icons/fa6";
 import { IoIosArrowForward } from "react-icons/io";
 import Reusabletbl from "../Reausable_comp/Reusabletbl";
 
